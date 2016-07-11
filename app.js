@@ -31,9 +31,15 @@ app.controller('EventsShowCtrl', function ($scope, EventService, $routeParams) {
     console.log($routeParams.id);
     $scope.event = EventService.get($routeParams.id);
   });
-app.controller('EventsCtrl', function($scope){
-  $scope.
-})
+app.controller('EventsCtlr', function($scope){
+ console.log("Events Controller");
+ var self = this;
+ this.addEvent = addEvent;
+
+ function addEvent(event){
+   all_events.push(event);  
+ }
+});
 
 
 
@@ -56,7 +62,6 @@ app.factory('EventService', function(){
   return EventService;
 
 })
-
 
 
 
