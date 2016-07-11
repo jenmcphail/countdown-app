@@ -1,0 +1,9 @@
+ <div ng-repeat="event in events">
+  <div class="row">
+    <div class="col-xs-4">
+      <img ng-src="{{event.image}}" class="img-responsive img-limits">
+    </div>
+  <div class="col-xs-8">
+    <h5><a ng-href="/events/{{event.id}}">{{event.name}}</a></h5>
+  </div>
+</div>
