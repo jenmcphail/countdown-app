@@ -1,3 +1,14 @@
+ <div ng-controller='EventCtrl'>
+   <form>
+      Name: <input type="text" ng-model="event.name" />
+      <br />
+      Image URL: <input type="text" ng-model="event.image" /><br />
+      Starts: <input type="text" ng-model="event.start_date" />
+      <br />
+      Description: <input type="text-area" ng-model="event.description" />
+      <input type="submit" ng-click="" value="Add Event" />
+   </form>
+ </div>
  <div ng-repeat="event in events">
   <div class="row">
     <div class="col-xs-4">

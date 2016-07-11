@@ -26,11 +26,14 @@ app.config(function($routeProvider, $locationProvider){
 app.controller('EventsIndexCtrl', function($scope, EventService){
       console.log("Events Index");
       $scope.events = all_events;
-    })
+    });
 app.controller('EventsShowCtrl', function ($scope, EventService, $routeParams) {
     console.log($routeParams.id);
     $scope.event = EventService.get($routeParams.id);
-});
+  });
+app.controller('EventsCtrl', function($scope){
+  $scope.
+})
 
 
 
